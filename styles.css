@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Outfit&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom properties */
+:root {
+    /* Primary */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+    --paragraph-color: hsla(0, 0%, 100%, 0.75);
+
+    /* Background, headings, buttons */
+    --very-light-gray: hsl(0, 0%, 95%);
+
+    /* Typography */
+   --font-size: 15px;
+   --body-font-family: 'Lexend Deca', 'sans-serif';
+   --font-light-weight: 400;   
+
+    --font-family: 'Bid Shoulders Display', 'cursive';
+    --font-weights: 700;
+}
+
+html {  
+    font-size: 62.5%;                                                            /* Font size of 10px*/
+}
+
+body {
+    font-family: var(--body-font-family);
+    font-size: 1.6rem;
+    color: var(--paragraph-color);
+}
+
+.cards {
+    display: flex;    
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50rem;
+    max-width: 100rem;
+       
+}
+
+.card {
+    padding: 5rem;
+    position: relative;
+}
+
+.sedans {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.heading {
+    color: var(--very-light-gray);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.link {
+    color: var(--very-light-gray);
+    font-family: var(--body-font-family);
+    background-color: transparent;
+
+    margin-top: 10rem;
+    padding: 1rem;
+
+    border: solid, 3px hsl(0, 0%, 95%);
+    border-radius: 25%;
+}
+
